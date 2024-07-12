@@ -2,112 +2,114 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+    <>
+     <body className="bg-background text-foreground">
+        <nav className="bg-primary text-primary-foreground p-4 flex justify-between items-center shadow-lg">
+          <div className="text-xl font-bold">LTG Pinturas e Drywall</div>
+          <button className="hidden md:block bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded-lg shadow-md">Contato</button>
+        </nav>
+        <section className="p-8 md:p-16 text-center bg-gradient-to-r from-accent to-accent-foreground text-accent-foreground">
+          <h1 className="text-4xl md:text-6xl font-bold">Serviços de alta qualidade</h1>
+          <p className="text-lg md:text-xl mt-4">Garantindo satisfação e superando expectativas.</p>
+        </section>
+        <section className="p-8 md:p-16 bg-card text-card-foreground rounded-lg shadow-md">
+          <h2 className="text-2xl md:text-4xl font-bold">Sobre Nós</h2>
+          <p className="mt-4">
+            Na LTG Pinturas, somos especialistas em pinturas, drywall e reformas. Com uma equipe altamente qualificada, oferecemos serviços de alta qualidade, sempre visando a satisfação dos nossos clientes
+            e superando suas expectativas.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        </section>
+        <section className="p-8 md:p-16">
+          <h2 className="text-2xl md:text-4xl font-bold">Missão, Visão e Valores</h2>
+          <h3 className="text-xl md:text-2xl font-bold mt-4">Missão</h3>
+          <p>Transformar ambientes com qualidade e excelência, proporcionando satisfação e superando as expectativas de nossos clientes.</p>
+          <h3 className="text-xl md:text-2xl font-bold mt-4">Visão</h3>
+          <p>Ser referência no mercado de pinturas e reformas, reconhecida pela qualidade dos nossos serviços e pelo compromisso com a satisfação do cliente.</p>
+          <h3 className="text-xl md:text-2xl font-bold mt-4">Valores</h3>
+          <ul className="list-disc list-inside">
+            <li>Qualidade</li>
+            <li>Comprometimento</li>
+            <li>Transparência</li>
+            <li>Inovação</li>
+            <li>Satisfação do Cliente</li>
+          </ul>
+        </section>
+        <section className="p-8 md:p-16 bg-card text-card-foreground rounded-lg shadow-md">
+          <h2 className="text-2xl md:text-4xl font-bold">Serviços</h2>
+          <ul className="mt-4">
+            <li><strong>Pinturas Residenciais e Comerciais:</strong> Breve descrição do serviço.</li>
+            <li><strong>Aplicação de Drywall:</strong> Breve descrição do serviço.</li>
+            <li><strong>Reformas e Manutenções:</strong> Breve descrição do serviço.</li>
+            <li><strong>Texturização e Acabamentos:</strong> Breve descrição do serviço.</li>
+            <li><strong>Pintura de Fachadas:</strong> Breve descrição do serviço.</li>
+            <li><strong>Serviços de Gesso:</strong> Breve descrição do serviço.</li>
+            <li><strong>Pintura de Portas e Janelas:</strong> Breve descrição do serviço.</li>
+          </ul>
+        </section>
+        <section className="p-8 md:p-16">
+          <h2 className="text-2xl md:text-4xl font-bold">Portfólio</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div className="bg-muted rounded-lg overflow-hidden shadow-md">
+              <Image src="https://openui.fly.dev/openui/400x300.svg?text=Project+1" width={900} height={900} alt="Project 1" className="w-full h-48 object-cover" />
+              <p className="mt-2 p-4">Breve descrição do projeto 1.</p>
+            </div>
+            <div className="bg-muted rounded-lg overflow-hidden shadow-md">
+              <Image src="https://openui.fly.dev/openui/400x300.svg?text=Project+2" width={900} height={900} alt="Project 2" className="w-full h-48 object-cover" />
+              <p className="mt-2 p-4">Breve descrição do projeto 2.</p>
+            </div>
+            <div className="bg-muted rounded-lg overflow-hidden shadow-md">
+              <Image src="https://openui.fly.dev/openui/400x300.svg?text=Project+3" width={900} height={900} alt="Project 3" className="w-full h-48 object-cover" />
+              <p className="mt-2 p-4">Breve descrição do projeto 3.</p>
+            </div>
+          </div>
+        </section>
+        <section className="p-8 md:p-16 bg-card text-card-foreground rounded-lg shadow-md">
+          <h2 className="text-2xl md:text-4xl font-bold">Depoimentos</h2>
+          <div className="mt-4 space-y-4">
+            <blockquote className="bg-muted p-4 rounded-lg shadow-md">
+              Feedback do cliente 1.
+              <footer className="text-right">Cliente 1</footer>
+            </blockquote>
+            <blockquote className="bg-muted p-4 rounded-lg shadow-md">
+              Feedback do cliente 2.
+              <footer className="text-right">Cliente 2</footer>
+            </blockquote>
+          </div>
+        </section>
+        <section className="p-8 md:p-16">
+          <h2 className="text-2xl md:text-4xl font-bold">Contato</h2>
+          <div className="mt-4">
+            <form className="space-y-4">
+              <input type="text" placeholder="Nome" className="w-full p-2 rounded-lg border border-input" />
+              <input type="email" placeholder="Email" className="w-full p-2 rounded-lg border border-input" />
+              <textarea placeholder="Mensagem" className="w-full p-2 rounded-lg border border-input"></textarea>
+              <button type="submit" className="bg-primary text-primary-foreground hover:bg-primary/80 px-4 py-2 rounded-lg shadow-md">Enviar</button>
+            </form>
+            <div className="mt-4 space-y-2">
+              <p>Telefone: 123-456-7890</p>
+              <p>Email: contato@ltgpinturas.com</p>
+              <p>Endereço: Rua das Pinturas, 123</p>
+            </div>
+            <div className="mt-4">
+              <Image src="https://openui.fly.dev/openui/600x400.svg?text=Mapa+da+Localização" width={900} height={900} alt="Mapa da Localização"  className="w-full h-64 object-cover rounded-lg shadow-md" />
+            </div>
+          </div>
+        </section>
+        <section className="p-8 md:p-16 bg-card text-card-foreground rounded-lg shadow-md">
+          <h2 className="text-2xl md:text-4xl font-bold">Blog</h2>
+          <div className="mt-4 space-y-4">
+            <article className="bg-muted p-4 rounded-lg shadow-md">
+              <h3 className="text-xl md:text-2xl font-bold">Título do Artigo 1</h3>
+              <p>Descrição breve do artigo 1.</p>
+            </article>
+            <article className="bg-muted p-4 rounded-lg shadow-md">
+              <h3 className="text-xl md:text-2xl font-bold">Título do Artigo 2</h3>
+              <p>Descrição breve do artigo 2.</p>
+            </article>
+          </div>
+        </section>
+        <footer className="bg-primary text-primary-foreground p-4 text-center shadow-lg">© 2023 LTG Pinturas e Drywall. Todos os direitos reservados.</footer>
+      </body>
+    </>
   );
 }
