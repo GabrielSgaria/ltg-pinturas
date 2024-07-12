@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+    --bg-background: #f0f0f0; /* Defina sua cor */
+    --text-foreground: #333; /* Defina sua cor */
+    --bg-primary: #1a73e8; /* Defina sua cor */
+    --text-primary-foreground: #fff; /* Defina sua cor */
+    --bg-secondary: #34a853; /* Defina sua cor */
+    --text-secondary-foreground: #fff; /* Defina sua cor */
+    --bg-accent: #fbbc05; /* Defina sua cor */
+    --text-accent-foreground: #fff; /* Defina sua cor */
+    --bg-card: #fff; /* Defina sua cor */
+    --text-card-foreground: #333; /* Defina sua cor */
+    --bg-muted: #e0e0e0; /* Defina sua cor */
+    --border-input: #ccc; /* Defina sua cor */
+  }
+  
+  .bg-background {
+    background-color: var(--bg-background);
+  }
+  
+  .text-foreground {
+    color: var(--text-foreground);
+  }
+  
+  .bg-primary {
+    background-color: var(--bg-primary);
+  }
+  
+  .text-primary-foreground {
+    color: var(--text-primary-foreground);
+  }
+  
+  .bg-secondary {
+    background-color: var(--bg-secondary);
+  }
+  
+  .text-secondary-foreground {
+    color: var(--text-secondary-foreground);
+  }
+  
+  .bg-accent {
+    background-color: var(--bg-accent);
+  }
+  
+  .text-accent-foreground {
+    color: var(--text-accent-foreground);
+  }
+  
+  .bg-card {
+    background-color: var(--bg-card);
+  }
+  
+  .text-card-foreground {
+    color: var(--text-card-foreground);
+  }
+  
+  .bg-muted {
+    background-color: var(--bg-muted);
+  }
+  
+  .border-input {
+    border-color: var(--border-input);
+  }
