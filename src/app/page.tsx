@@ -1,17 +1,73 @@
-import { services } from "@/lib/jobs";
+
+'use client'
+import { ButtonWpp } from "@/components/button-wpp";
+import { CardServices } from "@/components/card-services";
+import { ClientsCarrousel } from "@/components/carrousel-portfolio";
+import { Footer } from "@/components/footer";
+import { DoorOpen, PaintBrushBroad, PaintBrushHousehold, PaintBucket, PaintRoller, Screwdriver } from "@phosphor-icons/react";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <body className="bg-background text-foreground">
-        <nav className="bg-primary text-primary-foreground p-4 flex justify-between items-center shadow-lg">
-          <div className="text-xl font-bold">LTG Pinturas e Drywall</div>
-          <button className="hidden md:block bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded-lg shadow-md">Contato</button>
-        </nav>
-        <section className="p-8 md:p-16 text-center bg-gradient-to-r from-accent to-accent-foreground text-accent-foreground">
-          <h1 className="text-4xl md:text-6xl font-bold">Serviços de alta qualidade</h1>
-          <p className="text-lg md:text-xl mt-4">Garantindo satisfação e superando expectativas.</p>
+      <body className="bg-zinc-50 text-gray-900 mt-32 relative">
+        <div className="absolute top-0 right-0 -z-20 w-[1100px] h-[890px] rounded-bl-full  bg-blue-300 shadow-md" />
+        <section className="flex items-center justify-around p-8 md:p-16 text-center mx-auto container text-gray-900 h-[690px] ">
+          <div className="w-[500px]">
+            <Image width={900} height={900} src='/image/logo/logo.png' alt="Logo" quality={100} priority={true} />
+          </div>
+          <div className="flex flex-col gap-10 items-center max-w-[600px]">
+            <p className="text-lg md:text-5xl mt-4 font-bold">Somos Especialista em Pinturas, Drywall e Reformas.</p>
+            <span className="text-lg">
+              Serviços de alta qualidade.
+              Garantindo satisfação e superando expectativas.
+            </span>
+            <div className="w-[330px]">
+              <ButtonWpp />
+            </div>
+          </div>
+        </section>
+
+        <section className="p-8 md:p-16">
+          <h2 className="text-2xl md:text-4xl font-bold">Nossos Serviços</h2>
+          <p className="text-lg md:text-xl mt-4">Nosso compromisso é com a satisfação do cliente, buscando sempre superar expectativas.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <CardServices
+              icon={<PaintRoller className="" />}
+              title="Pinturas"
+              description="Oferecemos serviços de pintura interna e externa. Nossos pintores são especializados em diversas técnicas, garantindo um acabamento perfeito."
+            />
+            <CardServices
+              icon={<PaintBrushBroad className="" />}
+              title="Drywall"
+              description="Instalamos e reformamos sistemas de drywall, proporcionando praticidade e modernidade aos ambientes. Nossos serviços incluem divisórias, forros e detalhes decorativos."
+            />
+            <CardServices
+              icon={<PaintBrushHousehold className="" />}
+              title="Grafiato"
+              description="Realizamos reformas completas, desde a demolição até os acabamentos finais. Nossa equipe coordena todas as etapas do projeto, garantindo cumprimento de prazos e qualide"
+            />
+            <CardServices
+              icon={<PaintBucket className="" />}
+              title="Pintura Decorativa"
+              description="Nossa equipe é especializada em técnicas de pintura decorativa, trazendo criatividade e sofisticação para transformar ambientes."
+            />
+            <CardServices
+              icon={<DoorOpen className="" />}
+              title="Colocação de Portas"
+              description="Instalamos portas com precisão, assegurando perfeito encaixe e funcionamento, além de opções personalizadas conforme o projeto do cliente."
+            />
+            <CardServices
+              icon={<Screwdriver className="" />}
+              title="Reformas"
+              description="Realizamos reformas completas, desde a demolição até os acabamentos finais. Nossa equipe coordena todas as etapas do projeto, garantindo cumprimento de prazos e qualidade nos resultados."
+            />
+          </div>
+        </section>
+        <section className="p-8 md:p-16">
+          <h2 className="text-2xl md:text-4xl font-bold">Portfólio</h2>
+
+          <ClientsCarrousel />
         </section>
         <section className="p-8 md:p-16 bg-card text-card-foreground rounded-lg shadow-md">
           <h2 className="text-2xl md:text-4xl font-bold">Sobre Nós</h2>
@@ -20,108 +76,7 @@ export default function Home() {
             e superando suas expectativas.
           </p>
         </section>
-        <section className="p-8 md:p-16">
-          <h2 className="text-2xl md:text-4xl font-bold">Missão, Visão e Valores</h2>
-          <h3 className="text-xl md:text-2xl font-bold mt-4">Missão</h3>
-          <p>Transformar ambientes com qualidade e excelência, proporcionando satisfação e superando as expectativas de nossos clientes.</p>
-          <h3 className="text-xl md:text-2xl font-bold mt-4">Visão</h3>
-          <p>Ser referência no mercado de pinturas e reformas, reconhecida pela qualidade dos nossos serviços e pelo compromisso com a satisfação do cliente.</p>
-          <h3 className="text-xl md:text-2xl font-bold mt-4">Valores</h3>
-          <ul className="list-disc list-inside">
-            <li>Qualidade</li>
-            <li>Comprometimento</li>
-            <li>Transparência</li>
-            <li>Inovação</li>
-            <li>Satisfação do Cliente</li>
-          </ul>
-        </section>
-        <section className="p-8 md:p-16 text-center bg-gradient-to-r from-accent to-accent-foreground text-accent-foreground">
-          <h1 className="text-4xl md:text-6xl font-bold">Serviços de alta qualidade</h1>
-          <p className="text-lg md:text-xl mt-4">Garantindo satisfação e superando expectativas.</p>
-        </section>
-        <section className="p-8 md:p-16 bg-card text-card-foreground rounded-lg shadow-md">
-          <h2 className="text-2xl md:text-4xl font-bold">Sobre Nós</h2>
-          <p className="mt-4">
-            Na LTG Pinturas, somos especialistas em pinturas, drywall e reformas. Com uma equipe altamente qualificada,
-            oferecemos serviços de alta qualidade, sempre visando a satisfação dos nossos clientes e superando suas expectativas.
-          </p>
-        </section>
-        <section className="p-8 md:p-16">
-          <h2 className="text-2xl md:text-4xl font-bold">Nossos Serviços</h2>
-          <p className="text-lg md:text-xl mt-4">Nosso compromisso é com a satisfação do cliente, buscando sempre superar expectativas.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            {services.map((service, index) => (
-              <div key={index} className="bg-muted p-6 rounded-lg shadow-md">
-                <div className="text-3xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                <p>{service.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-        <section className="p-8 md:p-16">
-          <h2 className="text-2xl md:text-4xl font-bold">Portfólio</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-            <div className="bg-muted rounded-lg overflow-hidden shadow-md">
-              <Image src="/image/jobs/1.jpeg" width={900} height={900} alt="Project 1" className="w-full h-48 object-cover" />
-              <p className="mt-2 p-4">Breve descrição do projeto 1.</p>
-            </div>
-            <div className="bg-muted rounded-lg overflow-hidden shadow-md">
-              <Image src="/image/jobs/2.jpeg" width={900} height={900} alt="Project 2" className="w-full h-48 object-cover" />
-              <p className="mt-2 p-4">Breve descrição do projeto 2.</p>
-            </div>
-            <div className="bg-muted rounded-lg overflow-hidden shadow-md">
-              <Image src="/image/jobs/3.jpeg" width={900} height={900} alt="Project 3" className="w-full h-48 object-cover" />
-              <p className="mt-2 p-4">Breve descrição do projeto 3.</p>
-            </div>
-          </div>
-        </section>
-        <section className="p-8 md:p-16 bg-card text-card-foreground rounded-lg shadow-md">
-          <h2 className="text-2xl md:text-4xl font-bold">Depoimentos</h2>
-          <div className="mt-4 space-y-4">
-            <blockquote className="bg-muted p-4 rounded-lg shadow-md">
-              Feedback do cliente 1.
-              <footer className="text-right">Cliente 1</footer>
-            </blockquote>
-            <blockquote className="bg-muted p-4 rounded-lg shadow-md">
-              Feedback do cliente 2.
-              <footer className="text-right">Cliente 2</footer>
-            </blockquote>
-          </div>
-        </section>
-        <section className="p-8 md:p-16">
-          <h2 className="text-2xl md:text-4xl font-bold">Contato</h2>
-          <div className="mt-4">
-            <form className="space-y-4">
-              <input type="text" placeholder="Nome" className="w-full p-2 rounded-lg border border-input" />
-              <input type="email" placeholder="Email" className="w-full p-2 rounded-lg border border-input" />
-              <textarea placeholder="Mensagem" className="w-full p-2 rounded-lg border border-input"></textarea>
-              <button type="submit" className="bg-primary text-primary-foreground hover:bg-primary/80 px-4 py-2 rounded-lg shadow-md">Enviar</button>
-            </form>
-            <div className="mt-4 space-y-2">
-              <p>Telefone: 123-456-7890</p>
-              <p>Email: contato@ltgpinturas.com</p>
-              <p>Endereço: Rua das Pinturas, 123</p>
-            </div>
-            <div className="mt-4">
-              <Image src="/image/jobs/2.jpeg" width={900} height={900} alt="Mapa da Localização" className="w-full h-64 object-cover rounded-lg shadow-md" />
-            </div>
-          </div>
-        </section>
-        <section className="p-8 md:p-16 bg-card text-card-foreground rounded-lg shadow-md">
-          <h2 className="text-2xl md:text-4xl font-bold">Blog</h2>
-          <div className="mt-4 space-y-4">
-            <article className="bg-muted p-4 rounded-lg shadow-md">
-              <h3 className="text-xl md:text-2xl font-bold">Título do Artigo 1</h3>
-              <p>Descrição breve do artigo 1.</p>
-            </article>
-            <article className="bg-muted p-4 rounded-lg shadow-md">
-              <h3 className="text-xl md:text-2xl font-bold">Título do Artigo 2</h3>
-              <p>Descrição breve do artigo 2.</p>
-            </article>
-          </div>
-        </section>
-        <footer className="bg-primary text-primary-foreground p-4 text-center shadow-lg">© 2023 LTG Pinturas e Drywall. Todos os direitos reservados.</footer>
+        <Footer />
       </body>
     </>
   );
