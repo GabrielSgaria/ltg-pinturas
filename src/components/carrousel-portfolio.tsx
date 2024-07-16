@@ -34,12 +34,12 @@ export function ClientsCarrousel() {
           { src: "/image/jobs/6.jpeg"},
           { src: "/image/jobs/7.jpeg"},
           { src: "/image/jobs/8.jpeg"},
-          { src: "/image/jobs/9.jpeg"},
+  
           { src: "/image/jobs/10.jpeg"},
           { src: "/image/jobs/11.jpeg"},
           { src: "/image/jobs/12.jpeg"},
           { src: "/image/jobs/13.jpeg"},
-          { src: "/image/jobs/14.jpeg"},
+      
 
         ].map((project, index) => (
           <SplideSlide key={index} className="flex justify-center items-center py-5 md:w-[650px] md:h-[450px] max-h-[650px]">
