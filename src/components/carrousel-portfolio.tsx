@@ -8,7 +8,7 @@ export function ClientsCarrousel() {
   return (
     <>
       <Splide
-        className="h-full"
+        className="h-full "
         options={{
           type: "loop",
           focus: "center",
@@ -26,20 +26,28 @@ export function ClientsCarrousel() {
         }}
       >
         {[
-          { src: "/image/jobs/1.jpeg", description: "Descrição do projeto 1." },
-          { src: "/image/jobs/2.jpeg", description: "Descrição do projeto 2." },
-          { src: "/image/jobs/3.jpeg", description: "Descrição do projeto 3." },
-          { src: "/image/jobs/4.jpeg", description: "Descrição do projeto 4." },
-          { src: "/image/jobs/5.jpeg", description: "Descrição do projeto 5." },
+          { src: "/image/jobs/1.jpeg"},
+          { src: "/image/jobs/2.jpeg"},
+          { src: "/image/jobs/3.jpeg"},
+          { src: "/image/jobs/4.jpeg"},
+          { src: "/image/jobs/5.jpeg"},
+          { src: "/image/jobs/6.jpeg"},
+          { src: "/image/jobs/7.jpeg"},
+          { src: "/image/jobs/8.jpeg"},
+          { src: "/image/jobs/9.jpeg"},
+          { src: "/image/jobs/10.jpeg"},
+          { src: "/image/jobs/11.jpeg"},
+          { src: "/image/jobs/12.jpeg"},
+          { src: "/image/jobs/13.jpeg"},
+          { src: "/image/jobs/14.jpeg"},
 
         ].map((project, index) => (
-          <SplideSlide key={index} className="flex justify-center items-center py-5">
-            <div className="flex flex-col bg-zinc-50 rounded-2xl shadow-md md:w-[650px] md:h-[450px] overflow-hidden">
-              <div className="w-full h-[90%]">
-                <Image src={project.src} width={700} height={700} quality={100} priority={true} alt={`Project ${index + 1}`} className="w-full h-full object-fill" />
-              </div>
-              <p className="p-4 min-h-[10%] flex items-center justify-center text-zinc-950">{project.description}</p>
+          <SplideSlide key={index} className="flex justify-center items-center py-5 md:w-[650px] md:h-[450px] max-h-[650px]">
+
+            <div className="w-full h-[100%] rounded-xl overflow-hidden">
+              <Image src={project.src} width={700} height={700} quality={100} priority={true} alt={`Project ${index + 1}`} className="w-full h-full object-fill" />
             </div>
+
           </SplideSlide>
         ))}
       </Splide>
