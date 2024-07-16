@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt_br">
+    <html lang="pt_br" className="scroll-smooth focus:scroll-auto">
       <body className={`bg-zinc-50 text-gray-900 ${inter.className}`}>
         <NavBar />
         {children}

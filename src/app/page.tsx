@@ -30,9 +30,9 @@ export default function Home() {
           </section>
         </div>
 
-        <section className="p-8 md:p-16">
+        <section className="p-8 md:p-16" id="services">
           <h2 className="text-3xl md:text-4xl font-bold ">Nossos Serviços</h2>
-          <p className="text-base md:text-lg mt-2" >Nosso compromisso é com a satisfação do cliente, buscando sempre superar expectativas. Conheça alguns dos serviços prestados pela <span className="font-bold">LTG PINTURAS E DRYWALL.</span></p>
+          <p className="text-base md:text-lg mt-2 max-w-[790px]" >Nosso compromisso é com a satisfação do cliente, buscando sempre superar expectativas. Conheça alguns dos serviços prestados pela <span className="font-bold">LTG PINTURAS E DRYWALL.</span></p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <CardServices
               icon={<PaintRoller className="text-blue-900" size={30} weight="bold" />}
@@ -66,7 +66,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="px-8 md:px-16 py-28 bg-slate-900 text-zinc-50">
+        <section className="px-8 md:px-16 py-28 bg-slate-900 text-zinc-50" id="projects">
           <h2 className="text-3xl md:text-4xl font-bold ">Portfólio</h2>
           <p className="text-base md:text-lg my-3">Aqui estão alguns projetos feitos com excelencia pela empresa LTG.</p>
           <ClientsCarrousel />

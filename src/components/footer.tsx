@@ -11,7 +11,7 @@ import {
 export function Footer() {
     return (
         <>
-            <footer id='contatos' className=" border-t-[1px] border-zinc-200 pb-6">
+            <footer id='contacts' className=" border-t-[1px] border-zinc-200 pb-6">
                 <div className="container mx-auto mt-16 flex flex-col gap-16 lg:flex-row lg:justify-between lg:gap-0">
                     <div className="flex flex-col items-center lg:items-start ">
                         <h1 className="text-2xl font-black text-zinc-800 ">
@@ -25,8 +25,8 @@ export function Footer() {
                             <a
                                 onClick={() =>
                                     sendMensage(
-                                        5541995373052,
-                                        "Olá! Vim através do site Sgaria Tech."
+                                        5541996525929,
+                                        "Olá! Vim através do site LTG Pinturas e Drywall!."
                                     )
                                 }
                                 target="blank"
@@ -34,20 +34,19 @@ export function Footer() {
                             >
                                 <WhatsappLogo className="size-6" />
                                 <p className="h-6 items-center  justify-center font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-zinc-800">
-                                    (41) 99537-3052
+                                    (41) 99652-5929
                                 </p>
                             </a>
 
 
-
                             <Link
                                 target="blank"
-                                href="mailto:gabriel_sgaria2@outlook.com"
+                                href="mailto:tiagoltgpinturas@gmail.com"
                                 className="flex cursor-pointer  items-center gap-4 text-zinc-800"
                             >
                                 <EnvelopeClosedIcon className="size-6" />
                                 <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-zinc-800">
-                                    gabriel_sgaria2@outlook.com
+                                    tiagoltgpinturas@gmail.com
                                 </p>
                             </Link>
                         </div>
@@ -75,10 +74,16 @@ export function Footer() {
                             >
                                 <MapPinArea className="size-6" />
                                 <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-zinc-800">
-                                    Rua dos luteranos, 643 - Maria Antonieta, Pinhais - PR, 83331-190
+                                    Rua dos luteranos, 643 - Maria Antonieta, Pinhais-PR.
                                 </p>
                             </Link>
-
+                            <div className="w-full h-full mt-5">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.816252064057!2d-49.16341058938455!3d-25.44440597745896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcee2d1079ebd9%3A0x5f1be9bfdb119cba!2sR.%20dos%20Luteranos%2C%20643%20-%20Maria%20Antonieta%2C%20Pinhais%20-%20PR%2C%2083331-190!5e0!3m2!1spt-BR!2sbr!4v1721154586259!5m2!1spt-BR!2sbr"
+                                    loading="lazy"
+                                    className="w-full h-full rounded-xl">
+                                </iframe>
+                            </div>
                         </div>
                     </div>
                 </div>

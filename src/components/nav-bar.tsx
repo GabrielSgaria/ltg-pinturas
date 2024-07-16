@@ -63,21 +63,18 @@ export function NavBar() {
                     </div>
 
                     <nav className={`lg:flex lg:flex-row lg:items-center lg:gap-8 ${isMenuOpen ? 'z-20 transition-all duration-500 flex-col flex items-center justify-around absolute top-[75px] left-0 bg-zinc-50 w-full mt-[31px] h-[300px] shadow-lg ' : 'hidden'}`}>
-                        <Link href="/" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-gray-950 transition-all duration-200 font-bold hover:underline">
+                        <Link href="/" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-gray-900 transition-all duration-200 font-bold hover:underline">
                             Início
                         </Link>
-                        <Link href={`/#services`} onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-gray-950 transition-all duration-200 font-bold hover:underline">
+                        <Link href={`/#services`} onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-gray-900 transition-all duration-200 font-bold hover:underline">
                             Serviços
                         </Link>
-                        <Link href="/#projects" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-gray-950 transition-all duration-200 font-bold hover:underline">
+                        <Link href="/#projects" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-gray-900 transition-all duration-200 font-bold hover:underline">
                             Portfólio
                         </Link>
-                        <Link href="/#plans" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-gray-950 transition-all duration-200 font-bold hover:underline">
-                            Planos
-                        </Link>
 
-                        <Link href="/#quests" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-gray-950 transition-all duration-200 font-bold hover:underline">
-                            Perguntas Frequentes
+                        <Link href="/#contacts" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-gray-900 transition-all duration-200 font-bold hover:underline">
+                            Contatos
                         </Link>
                         <div className={`${isMenuOpen ? 'hidden' : 'h-10 border-l border-zinc-50'}`} />
 
