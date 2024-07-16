@@ -41,8 +41,8 @@ export function NavBar() {
 
 
     return (
-        <header className={`w-full flex h-full mx-auto justify-center items-center `}>
-            <div className="shadow-sm bg-zinc-50 py-2 w-full">
+        <header className={`w-full absolute top-0 h-full mx-auto justify-center items-center `}>
+            <div className={` py-2 w-full ${isMenuOpen ? 'bg-zinc-50' : ' bg-transparent'} ` }>
                 <div className="container mx-auto flex flex-row items-center justify-between gap-8 py-3 px-4 sm:px-0 text-base lg:justify-between ">
                     <div className="flex items-center justify-between w-full lg:w-36">
                         <Link href="/" className='w-36'>
@@ -62,7 +62,7 @@ export function NavBar() {
                         />
                     </div>
 
-                    <nav className={`lg:flex lg:flex-row lg:items-center lg:gap-8 ${isMenuOpen ? 'transition-all duration-500 flex-col flex items-center justify-around absolute top-[75px] left-0 bg-zinc-50 w-full mt-[31px] h-[300px] shadow-lg ' : 'hidden'}`}>
+                    <nav className={`lg:flex lg:flex-row lg:items-center lg:gap-8 ${isMenuOpen ? 'z-20 transition-all duration-500 flex-col flex items-center justify-around absolute top-[75px] left-0 bg-zinc-50 w-full mt-[31px] h-[300px] shadow-lg ' : 'hidden'}`}>
                         <Link href="/" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-gray-950 transition-all duration-200 font-bold hover:underline">
                             Início
                         </Link>
