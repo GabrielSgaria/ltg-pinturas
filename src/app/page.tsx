@@ -66,8 +66,8 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="px-8 md:px-16 py-28 bg-slate-900 text-zinc-50" id="projects">
-          <h2 className="text-3xl md:text-4xl font-bold ">Portfólio</h2>
+        <section className="px-8 md:px-16 py-28 bg-slate-900 text-zinc-50" >
+          <h2 className="text-3xl md:text-4xl font-bold " id="projects">Portfólio</h2>
           <p className="text-base md:text-lg my-3">Aqui estão alguns projetos feitos com excelencia pela empresa LTG.</p>
           <ClientsCarrousel />
           <div className="w-full flex justify-center items-center">
