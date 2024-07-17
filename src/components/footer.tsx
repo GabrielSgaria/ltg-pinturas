@@ -96,7 +96,7 @@ export function Footer() {
                     </div>
                 </div>
             </footer>
-            <div className="bg-slate-900 text-zinc-50 p-4 text-center justify-center">© 2023 LTG Pinturas e Drywall. Todos os direitos reservados.</div>
+            <div className="bg-slate-900 text-zinc-50 p-4 text-center justify-center">© 2024 LTG Pinturas e Drywall. Todos os direitos reservados.</div>
 
         </>
     )
