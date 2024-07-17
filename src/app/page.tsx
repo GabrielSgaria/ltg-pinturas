@@ -84,6 +84,7 @@ export default function Home() {
                   controls
                   muted
                   preload="auto"
+                  autoPlay={true}
                 />
               </div>
               <div className="text-center">
@@ -94,6 +95,7 @@ export default function Home() {
                   controls
                   muted
                   preload="auto"
+                  autoPlay={true}
                 />
               </div>
             </div>
