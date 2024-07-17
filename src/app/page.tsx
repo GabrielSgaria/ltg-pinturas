@@ -70,8 +70,33 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold " id="projects">Portfólio</h2>
           <p className="text-base md:text-lg my-3">Aqui estão alguns projetos feitos com excelencia pela empresa LTG.</p>
           <ClientsCarrousel />
-          <div className="w-full flex justify-center items-center">
-          
+          <div className="w-full px-8 md:px-16 flex flex-col items-center justify-center space-y-8">
+            <div className="text-center">
+              <h1 className="text-3xl md:text-4xl font-bold mt-10 ">ANTES E DEPOIS</h1>
+              <p className="text-base md:text-lg my-3">Veja como ficou a mudança neste trabalho com um antes e depois</p>
+            </div>
+            <div className="w-full flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0 md:space-x-8">
+              <div className="text-center">
+                <h1 className="text-xl font-semibold mb-4">ANTES</h1>
+                <video
+                  src="https://sa-east-1.graphassets.com/clwqdkiy400yu07ls56ql92po/clyq209vn06m407lvftw9xw66"
+                  className="w-full max-w-md rounded-md max-h-[600px] shadow-md"
+                  controls
+                  muted
+                />
+              </div>
+              <div className="text-center">
+                <h1 className="text-xl font-semibold mb-4">DEPOIS</h1>
+                <video
+                  src="https://sa-east-1.graphassets.com/clwqdkiy400yu07ls56ql92po/clyq209xe06nw07lp9tktwh23"
+                  className="w-full max-w-md max-h-[600px] rounded-md shadow-md"
+                  controls
+                  muted
+                />
+              </div>
+            </div>
+          </div>
+          <div className="w-full flex justify-center items-center mt-16">
             <button
               onClick={() =>
                 sendMensage(
@@ -86,7 +111,7 @@ export default function Home() {
                 Entrar em contato
               </p>
             </button>
-         
+
           </div>
         </section>
 

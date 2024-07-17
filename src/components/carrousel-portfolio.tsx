@@ -26,8 +26,8 @@ export function ClientsCarrousel() {
         }}
       >
         {[
-          { src: "/image/jobs/1.jpeg"},
           { src: "/image/jobs/2.jpeg"},
+          { src: "/image/jobs/1.jpeg"},
           { src: "/image/jobs/3.jpeg"},
           { src: "/image/jobs/4.jpeg"},
           { src: "/image/jobs/5.jpeg"},
