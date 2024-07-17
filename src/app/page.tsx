@@ -83,6 +83,7 @@ export default function Home() {
                   className="w-full max-w-md rounded-md max-h-[600px] shadow-md"
                   controls
                   muted
+                  preload="auto"
                 />
               </div>
               <div className="text-center">
@@ -92,6 +93,7 @@ export default function Home() {
                   className="w-full max-w-md max-h-[600px] rounded-md shadow-md"
                   controls
                   muted
+                  preload="auto"
                 />
               </div>
             </div>
