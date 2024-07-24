@@ -79,7 +79,7 @@ export default function Home() {
               <div className="text-center">
                 <h1 className="text-xl font-semibold mb-4">ANTES</h1>
                 <video
-                  src="https://sa-east-1.graphassets.com/clwqdkiy400yu07ls56ql92po/clyq209vn06m407lvftw9xw66"
+                  src="https://sa-east-1.graphassets.com/clyz1o74z04sr07kke1he7vlp/clyzt5yju00c307lwnlh517zi"
                   className="w-full max-w-md rounded-md max-h-[600px] shadow-md"
                   controls
                   muted
@@ -90,7 +90,7 @@ export default function Home() {
               <div className="text-center">
                 <h1 className="text-xl font-semibold mb-4">DEPOIS</h1>
                 <video
-                  src="https://sa-east-1.graphassets.com/clwqdkiy400yu07ls56ql92po/clyq209xe06nw07lp9tktwh23"
+                  src="https://sa-east-1.graphassets.com/clyz1o74z04sr07kke1he7vlp/clyzt64tk00cg07kc28ggavac"
                   className="w-full max-w-md max-h-[600px] rounded-md shadow-md"
                   controls
                   muted
