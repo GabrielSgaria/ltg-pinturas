@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "LTG Pinturas e Drywall - Qualidade e Satisfação",
   description: "LTG Pinturas - Pinturas, Drywall e Reformas com qualidade e excelência!",
   icons: "/favicon.png",
-  metadataBase: new URL("https://ltg-pinturas.vercel.app/"),
+  metadataBase: new URL("https://www.ltgpinturasedrywall.com.br"),
   openGraph: {
     title: "LTG Pinturas e Drywall - Qualidade e Satisfação",
     description: "LTG Pinturas - Pinturas, Drywall e Reformas com qualidade e excelência!",
-    url: "https://ltg-pinturas.vercel.app/",
+    url: "https://www.ltgpinturasedrywall.com.br",
     siteName: "LTG Pinturas e Drywall",
     locale: "pt_BR",
     type: "website",
