@@ -18,7 +18,7 @@ export default function Home() {
               <Image width={900} height={900} src='/image/logo/logo.png' alt="Logo" quality={100} priority={true} />
             </div>
             <div className="mt-10 md:mt-0 flex flex-col gap-10 items-center  lg:max-w-[500px] xl:max-w-[600px] relative">
-              <p className="text-3xl md:text-5xl mt-4 font-bold text-gray-800">Somos Especialista em Pinturas, Drywall e Reformas.</p>
+              <p className="text-3xl md:text-5xl mt-4 font-bold text-gray-800">Somos Especialistas em Pinturas, Drywall e Reformas.</p>
               <span className="text-lg text-gray-800">
                 Serviços de alta qualidade.
                 Garantindo satisfação e superando expectativas.
