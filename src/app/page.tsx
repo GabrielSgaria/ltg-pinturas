@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <>
       <body className="bg-zinc-50 text-gray-900">
-        <div className="w-full h-full bg-[url('/image/joanna-kosinska-mjC9apK53a8-unsplash.jpg')] bg-center bg-cover bg-no-repeat py-32">
-          <section className="flex flex-col lg:flex-row items-center justify-between p-8 md:p-16 text-center mx-auto container text-gray-900 lg:h-[550px] ">
+        <section className="w-full h-full bg-[url('/image/joanna-kosinska-mjC9apK53a8-unsplash.jpg')] bg-center bg-cover bg-no-repeat py-32">
+          <div className="flex flex-col lg:flex-row items-center justify-between p-8 md:p-16 text-center mx-auto container text-gray-900 lg:h-[550px] ">
             <div className="w-full md:w-[500px]">
               <Image width={900} height={900} src='/image/logo/logo.png' alt="Logo" quality={100} priority={true} />
             </div>
@@ -27,8 +27,8 @@ export default function Home() {
                 <ButtonWpp />
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
 
         <section className="p-8 md:p-16" id="services">
           <h2 className="text-3xl md:text-4xl font-bold ">Nossos Serviços</h2>
