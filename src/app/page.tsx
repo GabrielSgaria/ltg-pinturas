@@ -78,25 +78,19 @@ export default function Home() {
             <div className="w-full flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0 md:space-x-8">
               <div className="text-center">
                 <h1 className="text-xl font-semibold mb-4">ANTES</h1>
-                <video
-                  src="https://sa-east-1.graphassets.com/clyz1o74z04sr07kke1he7vlp/clyzt5yju00c307lwnlh517zi"
-                  className="w-full max-w-md rounded-md max-h-[600px] shadow-md"
-                  controls
-                  muted
-                  preload="auto"
-                  autoPlay={true}
-                />
+                <div className="w-full max-w-md rounded-md min-h-[599px] max-h-[600px] ">
+
+                  <iframe src="https://fast.wistia.net/embed/iframe/d3y4tnwfgv?seo=false&videoFoam=false" title="antes Video" allow="autoplay; fullscreen" name="wistia_embed" className="w-full min-h-[599px]"></iframe>
+                  <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+                </div>
               </div>
               <div className="text-center">
                 <h1 className="text-xl font-semibold mb-4">DEPOIS</h1>
-                <video
-                  src="https://sa-east-1.graphassets.com/clyz1o74z04sr07kke1he7vlp/clyzt64tk00cg07kc28ggavac"
-                  className="w-full max-w-md max-h-[600px] rounded-md shadow-md"
-                  controls
-                  muted
-                  preload="auto"
-                  autoPlay={true}
-                />
+                <div className="w-full max-w-md rounded-md min-h-[599px] max-h-[600px] ">
+                  <iframe src="https://fast.wistia.net/embed/iframe/y77iplrxb1?seo=false&videoFoam=false" title="Depois Video" allow="autoplay; fullscreen" name="wistia_embed" className="w-full min-h-[599px]"></iframe>
+                  <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+                </div>
+
               </div>
             </div>
           </div>
