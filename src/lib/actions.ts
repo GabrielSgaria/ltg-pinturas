@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export function sendMensage(numeroTelefone: number, mensagemPadrao: string) {
     var linkWhatsApp =
-      "https://wa.me/" +
+      "https://web.whatsapp.com/send?phone=" +
       numeroTelefone +
       "?text=" +
       encodeURIComponent(mensagemPadrao);
