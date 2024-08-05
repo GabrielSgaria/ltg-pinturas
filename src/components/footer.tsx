@@ -1,5 +1,5 @@
 'use client'
-import { sendMensage } from "@/lib/actions";
+import { sendMessage } from "@/lib/actions";
 import { MapPinArea, WhatsappLogo } from "@phosphor-icons/react";
 import Link from "next/link";
 
@@ -24,7 +24,7 @@ export function Footer() {
                         <div className="mt-8 flex flex-col gap-4 text-center lg:items-start lg:justify-start">
                             <a
                                 onClick={() =>
-                                    sendMensage(
+                                    sendMessage(
                                         5541996525929,
                                         "Olá! Vim através do site LTG Pinturas e Drywall!."
                                     )

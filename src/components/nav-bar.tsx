@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import logoTech from '../../public/image/logo/logo.png'
 import { List, WhatsappLogo } from '@phosphor-icons/react';
-import { sendMensage } from '@/lib/actions';
+import { sendMessage } from '@/lib/actions';
 
 export function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -80,7 +80,7 @@ export function NavBar() {
 
                         <a
                             onClick={() =>
-                                sendMensage(
+                                sendMessage(
                                     5541996525929,
                                     "Olá! Vim através do site LTG Pinturas e Drywall!."
                                 )
