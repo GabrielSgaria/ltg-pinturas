@@ -4,7 +4,7 @@ import { ButtonWpp } from "@/components/button-wpp";
 import { CardServices } from "@/components/card-services";
 import { ClientsCarrousel } from "@/components/carrousel-portfolio";
 import { Footer } from "@/components/footer";
-import { sendMensage } from "@/lib/actions";
+import { sendMessage } from "@/lib/actions";
 import { DoorOpen, PaintBrushBroad, PaintBrushHousehold, PaintBucket, PaintRoller, Screwdriver, WhatsappLogo } from "@phosphor-icons/react";
 import Image from "next/image";
 
@@ -97,7 +97,7 @@ export default function Home() {
           <div className="w-full flex justify-center items-center mt-16">
             <button
               onClick={() =>
-                sendMensage(
+                sendMessage(
                   5541996525929,
                   "Olá! Vim através do site LTG Pinturas e Drywall!."
                 )

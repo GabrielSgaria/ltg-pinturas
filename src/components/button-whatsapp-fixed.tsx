@@ -1,21 +1,14 @@
 'use client'
+import { sendMessage } from "@/lib/actions";
 import { WhatsappLogo } from "@phosphor-icons/react";
 
 export function ButtonWhatsAppFixed() {
-    function sendMensage(numeroTelefone: number, mensagemPadrao: string) {
-        var linkWhatsApp =
-            "https://wa.me/" +
-            numeroTelefone +
-            "?text=" +
-            encodeURIComponent(mensagemPadrao);
-
-        window.open(linkWhatsApp, "_blank");
-    }
+   
     return (
         <div className="flex fixed bottom-6 right-6 z-50 rounded-full shadow-xl">
             <button
                 onClick={() =>
-                    sendMensage(
+                    sendMessage(
                         5541996525929,
                         "Olá, Vim através do site LTG Pinturas e Drywall!"
                     )

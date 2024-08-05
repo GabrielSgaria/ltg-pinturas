@@ -1,5 +1,5 @@
 'use client'
-import { sendMensage } from "@/lib/actions";
+import { sendMessage } from "@/lib/actions";
 import { WhatsappLogo } from "@phosphor-icons/react";
 
 export function ButtonWpp(){
@@ -7,7 +7,7 @@ export function ButtonWpp(){
         <>
          <button
               onClick={() =>
-                sendMensage(
+                sendMessage(
                   5541996525929,
                   "Olá! Vim através do site LTG Pinturas e Drywall!."
                 )
